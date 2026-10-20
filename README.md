@@ -1,4 +1,4 @@
-# Hermes Lazy Dev Soul 🦹‍♂️⚡
+# Hermes Lazy Dev Soul
 
 > **The anti-bloat, docs-first, senior engineer persona and workflow for [Hermes Agent](https://github.com/nousresearch/hermes-agent) (by Nous Research).**
 
@@ -11,18 +11,18 @@ Most coding agents suffer from three fatal flaws:
 2. **They hallucinate APIs:** Guessing method names and flags based on outdated training data.
 3. **They fake success:** Claiming a bug is fixed without ever running tests or verifying outputs.
 
-**Hermes Lazy Dev Soul (`SOUL.md`)** fixes this by turning Hermes into a ruthless, pragmatic senior developer where **"Lazy" means finding the smallest, cleanest change that fully solves the problem.**
+**Hermes Lazy Dev Soul (`SOUL.md`)** fixes this by turning Hermes into a disciplined, pragmatic senior developer where **"Lazy" means finding the smallest, cleanest change that fully solves the problem.**
 
 ---
 
-## 🪜 The "Ponytail" Ladder
+## The "Ponytail" Ladder
 
 Before touching or writing any code, Hermes climbs this ladder and **stops at the first rung that holds**:
 
 | Rung | Question / Action | Rule |
 | :--- | :--- | :--- |
 | **1** | **Does this need to be built at all?** | YAGNI (You Aren't Gonna Need It). Cut unnecessary scope. |
-| **2** | **Does it already exist in this codebase?** | Reuse existing utilities, helpers, and patterns. Don't rewrite them. |
+| **2** | **Does it already exist in this codebase?** | Reuse existing utilities, helpers, and patterns. Do not rewrite them. |
 | **3** | **Does the standard library already do this?** | Native language features always beat third-party packages. |
 | **4** | **Does a native platform feature cover it?** | Leverage OS/platform tools directly. |
 | **5** | **Does an already-installed dependency solve it?**| Zero new dependencies if an existing package solves it. |
@@ -31,17 +31,17 @@ Before touching or writing any code, Hermes climbs this ladder and **stops at th
 
 ---
 
-## 🔄 The 7-Phase Execution Engine
+## The 7-Phase Execution Engine
 
 Hermes follows a mandatory, non-negotiable loop before and during code changes:
 
 ```
-[Phase 1: Understand] ──► [Phase 2: Docs-First] ──► [Phase 3: Plan]
-                                                         │
-                                                         ▼
-[Phase 6: Verify]    ◄── [Phase 5: Execute & Check] ◄── [Phase 4: Write PLAN.md]
-        │
-        ▼
+[Phase 1: Understand] --> [Phase 2: Docs-First] --> [Phase 3: Plan]
+                                                         |
+                                                         v
+[Phase 6: Verify]     <-- [Phase 5: Execute & Check] <-- [Phase 4: Write PLAN.md]
+        |
+        v
 [Phase 7: Report]
 ```
 
@@ -55,7 +55,7 @@ Hermes follows a mandatory, non-negotiable loop before and during code changes:
 
 ---
 
-## 🚀 Quick Setup & Installation
+## Quick Setup & Installation
 
 ### Option 1: Drop-In for Existing Hermes Agent Setup
 
@@ -80,27 +80,27 @@ cd hermes-lazy-dev-soul
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 hermes-lazy-dev-soul/
-├── SOUL.md              # The core system prompt & behavior rules
+├── SOUL.md              # The core system prompt and behavior rules
 ├── PLAN.md.template     # The contract template Hermes creates before changing code
 ├── .env.example         # Template for environment variables and API keys
 ├── .gitignore           # Security guardrails (prevents committing state.db or keys)
-└── README.md            # Documentation & setup guide
+└── README.md            # Documentation and setup guide
 ```
 
 ---
 
-## 🛡️ Security & Privacy Guardrails
+## Security & Privacy Guardrails
 
 * **Never Hardcode Secrets**: `.gitignore` is pre-configured to block `.env`, `*.db`, session states, and credentials.
 * **Dangerous Actions Protection**: Hermes is hard-coded to require explicit human approval before running `rm -rf`, `git push --force`, DB migrations, or destructive commands.
 
 ---
 
-## 🤝 Credits & Acknowledgments
+## Credits & Acknowledgments
 
 * [Hermes Agent](https://github.com/nousresearch/hermes-agent) by **Nous Research**.
 * Setup and workflow curated by **[harisawan-bit](https://github.com/harisawan-bit)**.

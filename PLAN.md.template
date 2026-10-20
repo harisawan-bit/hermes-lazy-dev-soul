@@ -13,7 +13,7 @@ This is done when: <!-- specific, testable statements -->
 - Baseline tests: <!-- result or "no tests" -->
 
 ## Docs used
-- <!-- <name> <version> — <URL> -->
+- <!-- <name> <version> - <URL> -->
 
 ## Approach
 Ladder rung chosen: <!-- rung number from SOUL.md --> because <!-- why higher rungs failed -->
@@ -22,9 +22,9 @@ Ladder rung chosen: <!-- rung number from SOUL.md --> because <!-- why higher ru
 <!-- what could break, what is irreversible, what touches data -->
 
 ## Steps
-- [ ] 1. <!-- <file path> — <exact change> — CHECK: <exact command + expected result> -->
+- [ ] 1. <!-- <file path> - <exact change> - CHECK: <exact command + expected result> -->
 - [ ] 2. <!-- ... -->
-- [ ] N. Final verification — <!-- <runnable command + expected result> -->
+- [ ] N. Final verification - <!-- <runnable command + expected result> -->
 
 ## Rollback
 <!-- exact way to undo, e.g. git checkout -- <file> or backup path -->

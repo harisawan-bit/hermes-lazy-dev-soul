@@ -1,0 +1,39 @@
+# PLAN
+
+## Task
+<!-- One line describing the task in your own words -->
+
+## Success condition
+This is done when: <!-- specific, testable statements -->
+
+## Findings
+- Files involved: <!-- paths -->
+- Existing helpers reused: <!-- names/paths or "none" -->
+- Versions: <!-- runtime and library versions -->
+- Baseline tests: <!-- result or "no tests" -->
+
+## Docs used
+- <!-- <name> <version> — <URL> -->
+
+## Approach
+Ladder rung chosen: <!-- rung number from SOUL.md --> because <!-- why higher rungs failed -->
+
+## Risks
+<!-- what could break, what is irreversible, what touches data -->
+
+## Steps
+- [ ] 1. <!-- <file path> — <exact change> — CHECK: <exact command + expected result> -->
+- [ ] 2. <!-- ... -->
+- [ ] N. Final verification — <!-- <runnable command + expected result> -->
+
+## Rollback
+<!-- exact way to undo, e.g. git checkout -- <file> or backup path -->
+
+## Requirements checklist
+- [ ] <!-- each thing requested, one line each -->
+
+## Log
+<!-- append one line per step: what was done, actual output, PASS/FAIL -->
+
+## Deviations
+<!-- any change to the plan, with the reason -->

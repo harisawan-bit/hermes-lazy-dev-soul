@@ -1,0 +1,48 @@
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.token
+
+# Hermes State & Databases
+*.db
+*.db-shm
+*.db-wal
+*.db.bak
+state.db*
+shared-state.db*
+verification_evidence.db*
+projects.db*
+*.lock
+.hermes-update-*
+
+# Backups & Snapshots
+backups/
+state-snapshots/
+*.bak
+*.bak-*
+
+# Python & Node Runtime Artifacts
+__pycache__/
+*.pyc
+venv/
+.venv/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS Artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Active Workspace Execution
+workspace/
+scratch/
+tools/
+installs/
+cache/
+logs/
